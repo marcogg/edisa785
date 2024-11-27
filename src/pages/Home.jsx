@@ -1,6 +1,7 @@
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import Nav from '../components/Nav/Nav'
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 const Home = () => {
   return (
@@ -16,58 +17,30 @@ const Home = () => {
         <section id="about" className="about section">
           {/* Section Title */}
           <div className="container section-title" data-aos="fade-up">
-            <h2>About Us<br /></h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2 className='text-left'>Nosotros<br /></h2>
+            <p className='text-left'>Hace 36 años él — Act. Nicolás García Luna fundó Enlace como una de las direcciones mas fuertes y distinguidas de GNP.... Comprometida con el éxito y grandeza.
+            Basados en la responsabilidad social, se ha diferenciado por el excelente desarrollo de empresarios con responsabilidad, ética y la calidad humana que nos caracteriza, llegando a obtener la máxima distinción otorgada por GNP en diversas ocasiones.</p>
           </div>{/* End Section Title */}
-          <div className="container">
-            <div className="row gy-4">
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-                <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-                <img src="assets/img/about.jpg" className="img-fluid rounded-4 mb-4" alt />
-                <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-                <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
-              </div>
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={250}>
-                <div className="content ps-0 ps-lg-5">
-                  <p className="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i className="bi bi-check-circle-fill" /> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                    <li><i className="bi bi-check-circle-fill" /> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                    <li><i className="bi bi-check-circle-fill" /> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-                  </p>
-                  <div className="position-relative mt-4">
-                    <img src="assets/img/about-2.jpg" className="img-fluid rounded-4" alt />
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox pulsating-play-btn" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>{/* /About Section */}
-        {/* Clients Section */}
+        {/* Begin: Masonry */}
         <section id="clients" className="clients section">
           <div className="container">
-            <div className="swiper init-swiper">
-              <div className="swiper-wrapper align-items-center">
-                <div className="swiper-slide"><img src="assets/img/clients/client-1.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-2.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-3.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-4.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-5.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-6.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-7.png" className="img-fluid" alt /></div>
-                <div className="swiper-slide"><img src="assets/img/clients/client-8.png" className="img-fluid" alt /></div>
-              </div>
-            </div>
+          <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+                gutter={'15px'}
+                >
+                <Masonry>
+                    <img src='../../oficinas_edisa.jpg' className='img-fluid' />
+                    <img src='../../oficinas_edisa2.jpg' className='img-fluid' />
+                    <img src='../../oficinas_edisa3.jpg' className='img-fluid' />
+                    <img src='../../oficinas-edisa-reforma.jpg' className='img-fluid' />
+                    <img src='../../oficinas-edisa4.jpg' className='img-fluid' />
+                    <img src='../../sala-juntas-edisa.jpg' className='img-fluid' />
+                </Masonry>
+            </ResponsiveMasonry>
           </div>
-        </section>{/* /Clients Section */}
+        </section>
+      {/* End: Masonry */}
         {/* Stats Section */}
         <section id="stats" className="stats section">
           <div className="container" data-aos="fade-up" data-aos-delay={100}>

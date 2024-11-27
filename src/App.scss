@@ -1,9 +1,6 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@use 'styles.scss' as colors;
+
+// 
 
 .logo {
   height: 6em;
@@ -39,4 +36,12 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.text-orange {
+  color: colors.$orange;
+}
+
+.text-blue{
+  color:colors.$blue;
 }

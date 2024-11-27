@@ -32,7 +32,8 @@ const Nav = () => {
               <li><Link to="#about">Nosotros</Link></li>
               {/* <li><Link href="#services">Services</Link></li> */}
               <li><Link to="#portfolio">Experiencias</Link></li>
-              <li><Link to="#team">Estructura</Link></li>
+              <li><Link to="#portfolio">Estructura</Link></li>
+              <li><Link to='#mural'>Mural de la fama</Link></li>
               <li><Link to="#contact">Contacto</Link></li>
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
