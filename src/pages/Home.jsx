@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import Nav from '../components/Nav/Nav'
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
 const Home = () => {
   return (
@@ -19,70 +20,45 @@ const Home = () => {
           <div className="container section-title" data-aos="fade-up">
             <h2 className='text-left'>Nosotros<br /></h2>
             <p className='text-left'>Hace 36 años él — Act. Nicolás García Luna fundó Enlace como una de las direcciones mas fuertes y distinguidas de GNP.... Comprometida con el éxito y grandeza.
-            Basados en la responsabilidad social, se ha diferenciado por el excelente desarrollo de empresarios con responsabilidad, ética y la calidad humana que nos caracteriza, llegando a obtener la máxima distinción otorgada por GNP en diversas ocasiones.</p>
+              Basados en la responsabilidad social, se ha diferenciado por el excelente desarrollo de empresarios con responsabilidad, ética y la calidad humana que nos caracteriza, llegando a obtener la máxima distinción otorgada por GNP en diversas ocasiones.</p>
           </div>{/* End Section Title */}
         </section>{/* /About Section */}
         {/* Begin: Masonry */}
         <section id="clients" className="clients section">
           <div className="container">
-          <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-                gutter={'15px'}
-                >
-                <Masonry>
-                    <img src='../../oficinas_edisa.jpg' className='img-fluid' />
-                    <img src='../../oficinas_edisa2.jpg' className='img-fluid' />
-                    <img src='../../oficinas_edisa3.jpg' className='img-fluid' />
-                    <img src='../../oficinas-edisa-reforma.jpg' className='img-fluid' />
-                    <img src='../../oficinas-edisa4.jpg' className='img-fluid' />
-                    <img src='../../sala-juntas-edisa.jpg' className='img-fluid' />
-                </Masonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+
+            >
+              <Masonry gutter='15px'>
+                <img src='../../oficinas_edisa.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas_edisa2.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas_edisa3.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas-edisa-reforma.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas-edisa4.jpg' className='img-fluid rounded-border' />
+                <img src='../../sala-juntas-edisa.jpg' className='img-fluid rounded-border' />
+              </Masonry>
             </ResponsiveMasonry>
           </div>
         </section>
-      {/* End: Masonry */}
+        {/* End: Masonry */}
         {/* Stats Section */}
         <section id="stats" className="stats section">
           <div className="container" data-aos="fade-up" data-aos-delay={100}>
             <div className="row gy-4 align-items-center">
               <div className="col-lg-5">
-                <img src="assets/img/stats-img.svg" alt className="img-fluid" />
+                <img src="./../edisa785_equipo.jpg" alt className="img-fluid" />
               </div>
               <div className="col-lg-7">
                 <div className="row gy-4">
-                  <div className="col-lg-6">
+                  <div className='col-12'>
+                    <img src='./../edisa785_logo.svg' className='img-fluid' width={280} />
+                  </div>
+                  <div className="col-lg-12">
                     <div className="stats-item d-flex">
-                      <i className="bi bi-emoji-smile flex-shrink-0" />
                       <div>
-                        <span data-purecounter-start={0} data-purecounter-end={232} data-purecounter-duration={1} className="purecounter" />
-                        <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-                      </div>
-                    </div>
-                  </div>{/* End Stats Item */}
-                  <div className="col-lg-6">
-                    <div className="stats-item d-flex">
-                      <i className="bi bi-journal-richtext flex-shrink-0" />
-                      <div>
-                        <span data-purecounter-start={0} data-purecounter-end={521} data-purecounter-duration={1} className="purecounter" />
-                        <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-                      </div>
-                    </div>
-                  </div>{/* End Stats Item */}
-                  <div className="col-lg-6">
-                    <div className="stats-item d-flex">
-                      <i className="bi bi-headset flex-shrink-0" />
-                      <div>
-                        <span data-purecounter-start={0} data-purecounter-end={1453} data-purecounter-duration={1} className="purecounter" />
-                        <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-                      </div>
-                    </div>
-                  </div>{/* End Stats Item */}
-                  <div className="col-lg-6">
-                    <div className="stats-item d-flex">
-                      <i className="bi bi-people flex-shrink-0" />
-                      <div>
-                        <span data-purecounter-start={0} data-purecounter-end={32} data-purecounter-duration={1} className="purecounter" />
-                        <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                        <p>Es una dirección de agencia de la aseguradora <Link to='https://www.gnp.com.mx/'>GNP</Link> donde se gestionan y coordinan las actividades relacionadas con la venta de pólizas, atención a clientes, tramitación de siniestros y otros servicios relacionados con los seguros. Esta dirección es donde trabajan los agentes de seguros y personal administrativo de la aseguradora para brindar servicios a los clientes.</p>
+                        <p>Connoce nuestras oficinas, ubicadas en Av. Paseo de la Reforma 144 Piso #1, Cuahutemoc, Ciudad de México</p>
                       </div>
                     </div>
                   </div>{/* End Stats Item */}
@@ -91,6 +67,99 @@ const Home = () => {
             </div>
           </div>
         </section>{/* /Stats Section */}
+        {/* Team Section */}
+        <section id="team" className="team section">
+          {/* Section Title */}
+          <div className="container section-title" data-aos="fade-up">
+            <h2>Nuestro equipo</h2>
+            <p>Conoce a los profesionales que te ayudarán a impulsar tu carrera</p>
+          </div>{/* End Section Title */}
+          <div className="container">
+            <div className="row gy-4">
+              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={100}>
+                <div className="member">
+                  <img src="./../organigrama/nicolas-garcia.jpg" className="img-fluid" alt='Nicolás García' />
+                  <h4>Nicolás García</h4>
+                  <span>Director de agencia</span>
+                </div>
+              </div>{/* End Team Member */}
+            </div>
+            <div className='row'>
+              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={200}>
+                <div className="member">
+                  <img src="./../organigrama/fabian-garcia.jpg" className="img-fluid" alt='Fabián García' />
+                  <h4>Fabián García</h4>
+                  <span>Director Operativo</span>
+                  <div className="social">
+                    <a href><i className="bi bi-twitter-x" /></a>
+                    <a href><i className="bi bi-facebook" /></a>
+                    <a href><i className="bi bi-instagram" /></a>
+                    <a href><i className="bi bi-linkedin" /></a>
+                  </div>
+                </div>
+              </div>{/* End Team Member */}
+              <div className='row'>
+                <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/alejandro-torres.jpg" className="img-fluid" alt='Alejandro Torres' />
+                    <h4>Alejandro Torres</h4>
+                    <span>Gerente de operación</span>
+                    <div className="social">
+                      <a href><i className="bi bi-twitter-x" /></a>
+                      <a href><i className="bi bi-facebook" /></a>
+                      <a href><i className="bi bi-instagram" /></a>
+                      <a href><i className="bi bi-linkedin" /></a>
+                    </div>
+                  </div>
+                </div>
+                {/* Monica Flores */}
+                <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/monica-flores.jpg" className="img-fluid" alt='Mónica Flores' />
+                    <h4>Monica Flores</h4>
+                    <span>Gerente de operación Vida</span>
+                    <div className="social">
+                      <a href><i className="bi bi-twitter-x" /></a>
+                      <a href><i className="bi bi-facebook" /></a>
+                      <a href><i className="bi bi-instagram" /></a>
+                      <a href><i className="bi bi-linkedin" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>{/* End Team Member */}
+            </div>{/*  End Row */}
+            <div className='row'>{/*New Row */}
+              {/* Uriel Rosas */}
+              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div className="member">
+                  <img src="./../organigrama/uriel-rosas.jpg" className="img-fluid" alt='Uriel Rosas' />
+                  <h4>Uriel Rosas</h4>
+                  <span>Ejecutivo de vida</span>
+                  <div className="social">
+                    <a href><i className="bi bi-twitter-x" /></a>
+                    <a href><i className="bi bi-facebook" /></a>
+                    <a href><i className="bi bi-instagram" /></a>
+                    <a href><i className="bi bi-linkedin" /></a>
+                  </div>
+                </div>
+              </div>
+              {/* Gabriela molina */}
+              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div className="member">
+                  <img src="./../organigrama/gaby-molina.jpg" className="img-fluid" alt='Gabriela Molina' />
+                  <h4>Gabriela Molina</h4>
+                  <span>Ejecutiva de cobranza y traspasos</span>
+                  <div className="social">
+                    <a href><i className="bi bi-twitter-x" /></a>
+                    <a href><i className="bi bi-facebook" /></a>
+                    <a href><i className="bi bi-instagram" /></a>
+                    <a href><i className="bi bi-linkedin" /></a>
+                  </div>
+                </div>
+              </div>
+            </div> {/* End Row */}
+          </div>
+        </section>{/* /Team Section */}
         {/* Call To Action Section */}
         <section id="call-to-action" className="call-to-action section dark-background">
           <div className="container">
@@ -269,199 +338,7 @@ const Home = () => {
             </div>
           </div>
         </section>{/* /Testimonials Section */}
-        {/* Portfolio Section */}
-        <section id="portfolio" className="portfolio section">
-          {/* Section Title */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Portfolio</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div>{/* End Section Title */}
-          <div className="container">
-            <div className="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-              <ul className="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay={100}>
-                <li data-filter="*" className="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Product</li>
-                <li data-filter=".filter-branding">Branding</li>
-                <li data-filter=".filter-books">Books</li>
-              </ul>{/* End Portfolio Filters */}
-              <div className="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay={200}>
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/app-1.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/product-1.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/branding-1.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/books-1.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/app-2.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/product-2.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/branding-2.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/books-2.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/app-3.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/product-3.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/branding-3.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-                <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                  <div className="portfolio-content h-100">
-                    <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" className="glightbox"><img src="assets/img/portfolio/books-3.jpg" className="img-fluid" alt /></a>
-                    <div className="portfolio-info">
-                      <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                      <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                  </div>
-                </div>{/* End Portfolio Item */}
-              </div>{/* End Portfolio Container */}
-            </div>
-          </div>
-        </section>{/* /Portfolio Section */}
-        {/* Team Section */}
-        <section id="team" className="team section">
-          {/* Section Title */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Our Team</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div>{/* End Section Title */}
-          <div className="container">
-            <div className="row gy-4">
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={100}>
-                <div className="member">
-                  <img src="assets/img/team/team-1.jpg" className="img-fluid" alt />
-                  <h4>Walter White</h4>
-                  <span>Web Development</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
-                  </div>
-                </div>
-              </div>{/* End Team Member */}
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={200}>
-                <div className="member">
-                  <img src="assets/img/team/team-2.jpg" className="img-fluid" alt />
-                  <h4>Sarah Jhinson</h4>
-                  <span>Marketing</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
-                  </div>
-                </div>
-              </div>{/* End Team Member */}
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
-                <div className="member">
-                  <img src="assets/img/team/team-3.jpg" className="img-fluid" alt />
-                  <h4>William Anderson</h4>
-                  <span>Content</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
-                  </div>
-                </div>
-              </div>{/* End Team Member */}
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={400}>
-                <div className="member">
-                  <img src="assets/img/team/team-4.jpg" className="img-fluid" alt />
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
-                  </div>
-                </div>
-              </div>{/* End Team Member */}
-            </div>
-          </div>
-        </section>{/* /Team Section */}
+
         {/* Pricing Section */}
         <section id="pricing" className="pricing section">
           {/* Section Title */}
@@ -719,7 +596,7 @@ const Home = () => {
             </div>
           </div>
         </section>{/* /Contact Section */}
-      </main>
+      </main >
 
 
       {/* Footer */}
