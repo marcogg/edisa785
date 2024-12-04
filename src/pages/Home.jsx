@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
@@ -74,88 +75,247 @@ const Home = () => {
             <h2>Nuestro equipo</h2>
             <p>Conoce a los profesionales que te ayudarán a impulsar tu carrera</p>
           </div>{/* End Section Title */}
-          <div className="container">
+          <div className="container-full">
             <div className="row gy-4">
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={100}>
+              <div className="col-xl-2 col-md-2 d-flex m-auto" data-aos="fade-up" data-aos-delay={100}>
                 <div className="member">
                   <img src="./../organigrama/nicolas-garcia.jpg" className="img-fluid" alt='Nicolás García' />
                   <h4>Nicolás García</h4>
                   <span>Director de agencia</span>
+                  <div className="social">
+                        <a href><i className="bi bi-linkedin" /></a>
+                      </div>
                 </div>
               </div>{/* End Team Member */}
             </div>
             <div className='row'>
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={200}>
-                <div className="member">
-                  <img src="./../organigrama/fabian-garcia.jpg" className="img-fluid" alt='Fabián García' />
-                  <h4>Fabián García</h4>
-                  <span>Director Operativo</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
-                  </div>
-                </div>
-              </div>{/* End Team Member */}
-              <div className='row'>
-                <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
+              <div className='col-6 opsBg'>
+                <div data-aos="fade-up" data-aos-delay={200}>
                   <div className="member">
-                    <img src="./../organigrama/alejandro-torres.jpg" className="img-fluid" alt='Alejandro Torres' />
-                    <h4>Alejandro Torres</h4>
-                    <span>Gerente de operación</span>
+                    <img src="./../organigrama/fabian-garcia.jpg" className="img-fluid" alt='Fabián García' />
+                    <h4>Fabián García</h4>
+                    <span>Director Operativo</span>
                     <div className="social">
-                      <a href><i className="bi bi-twitter-x" /></a>
-                      <a href><i className="bi bi-facebook" /></a>
-                      <a href><i className="bi bi-instagram" /></a>
-                      <a href><i className="bi bi-linkedin" /></a>
+                        <a href><i className="bi bi-linkedin" /></a>
+                      </div>
+                  </div>
+                </div>{/* End Team Member */}
+              </div>
+              <div className='col-6 commBg'>
+                <div className="col-xl-4 col-md-4 d-flex mx-auto" data-aos="fade-up" data-aos-delay={200}>
+                  <div className="member">
+                    <img src="./../organigrama/rafael-martinez.jpg" className="img-fluid" alt='Fabián García' />
+                    <h4>Rafa Martínez</h4>
+                    <span>Director Comercial</span>
+                    <div className="social">
+                        <a href><i className="bi bi-linkedin" /></a>
+                      </div>
+                  </div>
+                </div>{/* End Team Member */}
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-6 opsBg'>
+                <div className='row d-flex m-auto'>
+                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                    <div className="member">
+                      <img src="./../organigrama/alejandro-torres.jpg" className="img-fluid" alt='Alejandro Torres' />
+                      <h4>Alejandro Torres</h4>
+                      <span>Gerente de operación</span>
                     </div>
                   </div>
+                  {/* Monica Flores */}
+                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                    <div className="member">
+                      <img src="./../organigrama/monica-flores.jpg" className="img-fluid" alt='Mónica Flores' />
+                      <h4>Monica Flores</h4>
+                      <span>Gerente de operación Vida</span>
+                    </div>
+                  </div>{/* End Team Member */}
                 </div>
-                {/* Monica Flores */}
-                <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
-                  <div className="member">
-                    <img src="./../organigrama/monica-flores.jpg" className="img-fluid" alt='Mónica Flores' />
-                    <h4>Monica Flores</h4>
-                    <span>Gerente de operación Vida</span>
-                    <div className="social">
-                      <a href><i className="bi bi-twitter-x" /></a>
-                      <a href><i className="bi bi-facebook" /></a>
-                      <a href><i className="bi bi-instagram" /></a>
-                      <a href><i className="bi bi-linkedin" /></a>
+              </div>
+              {/* Comercial row */}
+              <div className='col-6 commBg'>
+                <div className='row mx-auto'>
+                  {/* Perla Cabrera */}
+                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                    <div className="member">
+                      <img src="./../organigrama/perla-cabrera.jpg" className="img-fluid" alt='Perla Cabrera' />
+                      <h4>Perla Cabrera</h4>
+                      <span>Gerente de reclutamiento y selección</span>
                     </div>
                   </div>
+                  {/* Carlos Saloma */}
+                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                    <div className="member">
+                      <img src="./../organigrama/carlos-saloma.jpg" className="img-fluid" alt='Carlos Saloma' />
+                      <h4>Carlos Saloma</h4>
+                      <span>Gerente de desarrollo</span>
+                    </div>
+                  </div>{/* End Team Member */}
+                  {/* Rafael Martinez Jr */}
+                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                    <div className="member">
+                      <img src="./../organigrama/rafael-martinez.jpg" className="img-fluid" alt='Rafael Martinez' />
+                      <h4>Rafael Martínez Jr.</h4>
+                      <span>Gerente de desarrollo</span>
+                    </div>
+                  </div>{/* End Team Member */}
                 </div>
-              </div>{/* End Team Member */}
+              </div>
             </div>{/*  End Row */}
             <div className='row'>{/*New Row */}
-              {/* Uriel Rosas */}
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
-                <div className="member">
-                  <img src="./../organigrama/uriel-rosas.jpg" className="img-fluid" alt='Uriel Rosas' />
-                  <h4>Uriel Rosas</h4>
-                  <span>Ejecutivo de vida</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
+              <div className='col-6 opsBg'>
+                <div className='row'>
+                {/* Uriel Rosas */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/uriel-rosas.jpg" className="img-fluid" alt='Uriel Rosas' />
+                    <h4>Uriel Rosas</h4>
+                    <span>Ejecutivo de vida</span>
+                    
+                  </div>
+                </div>
+                {/* Gabriela molina */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/gaby-molina.jpg" className="img-fluid" alt='Gabriela Molina' />
+                    <h4>Gabriela Molina</h4>
+                    <span>Ejecutiva de cobranza y traspasos</span>
+                    
+                  </div>
+                </div>
+                {/* Heidi Sanchez */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/heidi-sanchez.jpg" className="img-fluid" alt='Heidi Sanchez' />
+                    <h4>Heidi Sanchez</h4>
+                    <span>Siniestros</span>
+                    
+                  </div>
+                </div>
+                {/* Evelyn Arias */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/evelyn-arias.jpg" className="img-fluid" alt='Evelyn Arias' />
+                    <h4>Evelyn Arias</h4>
+                    <span>Ejecutiva de GMM</span>
+                    
+                  </div>
+                </div>
+                {/* Itzel Serra */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/itzel-serra.jpg" className="img-fluid" alt='Itzel Serra' />
+                    <h4>Itzel Serra</h4>
+                    <span>Ejecutiva GMM</span>
+                    
+                  </div>
+                </div>
+                {/* Ramces Rodriguez */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/ramces-rodriguez.jpg" className="img-fluid" alt='Ramces Rodriguez' />
+                    <h4>Ramces Rodriguez</h4>
+                    <span>Ejecutiva GMM</span>
+                    
+                  </div>
+                </div>
+                {/* Daniel Juarez */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/daniel-juarez.jpg" className="img-fluid" alt='Daniel Juarez' />
+                    <h4>Daniel Juarez</h4>
+                    <span>Ejecutivo Autos</span>
+                    
+                  </div>
+                </div>
+                {/* Jose Alfredo Jimenez */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/jose-alfredo-jimenez.jpg" className="img-fluid" alt='José Alfredo Jimenez' />
+                    <h4>José Alfredo Jimenez</h4>
+                    <span>Ejecutiva Seguros Empresariales</span>
+                    
+                  </div>
+                </div>
+                {/* Lucila Lopez */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/lucila-lopez.jpg" className="img-fluid" alt='Lucila Lopez' />
+                    <h4>Lucila Lopez</h4>
+                    <span>Ejecutiva Seuguros Empresariales</span>
+                    
+                  </div>
+                </div>{/*End Member*/}
+              </div>
+              </div>
+              {/* Comercial team */}
+              <div className='col-6 commBg'>
+                <div className='row'>
+                {/* Barusch Peralta */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/barusch-peralta.jpg" className="img-fluid" alt='Barusch Peralta' />
+                    <h4>Barusch Peralta</h4>
+                    <span>Ejecutiva de atracción</span>
+                    
+                  </div>
+                </div>
+                {/* Claudia mendoza */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/claudia-mendoza.jpg" className="img-fluid" alt='Claudia Mendoza' />
+                    <h4>Claudia Mendoza</h4>
+                    <span>Ejecutiva de atracción</span>
+                    
+                  </div>
+                </div>
+                {/* Norma Romero */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/norma-romero.jpg" className="img-fluid" alt='Norma Romero' />
+                    <h4>Norma Romero</h4>
+                    <span>Gerente de Promoción de Vida</span>
+                    
+                  </div>
+                </div>
+                {/* Alvar Pérez */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/alvar-perez.jpg" className="img-fluid" alt='Alvar Perez' />
+                    <h4>Alvar Perez</h4>
+                    <span>Gerente Promoción Patrimonial</span>
+                    
+                  </div>
+                </div>
+                {/* Alberto Bote */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/alberto-bote.jpg" className="img-fluid" alt='Albero Bote' />
+                    <h4>Alberto Bote</h4>
+                    <span>Gerente Promoción GMM</span>
+                    
+                  </div>
+                </div>
+                {/* Ricardo Monroy */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/ricardo-monroy.jpg" className="img-fluid" alt='Ricardo Monroy' />
+                    <h4>Ricardo Monroy</h4>
+                    <span>Gerente promoción empresariales</span>
+                    
+                  </div>
+                </div>
+                {/* Itzel Magali */}
+                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="member">
+                    <img src="./../organigrama/itzel-magali.jpg" className="img-fluid" alt='Itzel Magali' />
+                    <h4>Itzel Magali</h4>
+                    <span>Seguimiento a Logros</span>
                   </div>
                 </div>
               </div>
-              {/* Gabriela molina */}
-              <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay={300}>
-                <div className="member">
-                  <img src="./../organigrama/gaby-molina.jpg" className="img-fluid" alt='Gabriela Molina' />
-                  <h4>Gabriela Molina</h4>
-                  <span>Ejecutiva de cobranza y traspasos</span>
-                  <div className="social">
-                    <a href><i className="bi bi-twitter-x" /></a>
-                    <a href><i className="bi bi-facebook" /></a>
-                    <a href><i className="bi bi-instagram" /></a>
-                    <a href><i className="bi bi-linkedin" /></a>
-                  </div>
-                </div>
               </div>
             </div> {/* End Row */}
           </div>
