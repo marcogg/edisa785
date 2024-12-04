@@ -57,10 +57,14 @@
   background-color: #f0eff8;
   padding: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
 }
 
 .commBg {
   background-color: #fdf6f0;
-  padding: 10px
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
 }

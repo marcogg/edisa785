@@ -75,6 +75,196 @@ const Home = () => {
             <h2>Nuestro equipo</h2>
             <p>Conoce a los profesionales que te ayudarán a impulsar tu carrera</p>
           </div>{/* End Section Title */}
+          {/* Organigram Responsive */}
+          <div className="container-organigrama">
+            <div className='level-1 rectangle'>
+              <img src="./../organigrama/nicolas-garcia.jpg" className="img-fluid" alt='Nicolás García' />
+            <h2 className="">Nicolás García</h2>
+            <p>Director de agencia</p>
+            </div>
+            
+            <ol className="level-2-wrapper">
+              <li>
+                <div className='level-2 rectangle'>
+                  <img src="./../organigrama/fabian-garcia.jpg" className="img-fluid" alt='Fabián García' />
+                  <h2 className="">Fabián García</h2>
+                  <p>Director Operativo</p>
+                </div>
+                <ol className="level-3-wrapper">
+                  <li>
+                    <div className="level-3 rectangle">
+                      <img src="./../organigrama/alejandro-torres.jpg" className="img-fluid" alt='Alejandro Torres' />
+                    <h3>Alejandro Torres</h3>
+                    <p>Gerente de operativo</p>
+                    </div>
+                    
+                    <ol className="level-4-wrapper">
+                      <li>
+                        <div className='level-4 rectangle'>
+                          <img src="./../organigrama/heidi-sanchez.jpg" className="img-fluid" alt='Heidi Sanchez' />
+                          <h4 className="">Heidi Sanchez</h4>
+                          <p>Siniestros</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/evelyn-arias.jpg" className="img-fluid" alt='Evelyn Arias' />
+                          <h4 className="">Evelyn Arias</h4>
+                          <p>Ejecutiva GMM</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className='level-4 rectangle'>
+                          <img src="./../organigrama/itzel-serra.jpg" className="img-fluid" alt='Itzel Serra' />
+                          <h4 className="">Itzel Serra</h4>
+                          <p>Ejecutiva GMM</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/ramces-rodriguez.jpg" className="img-fluid" alt='Ramces Rodriguez' />
+                          <h4 className="">Ramces Rodriguez</h4>
+                          <p>Ejecutivo GMM</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/daniel-juarez.jpg" className="img-fluid" alt='Daniel Juarez' />
+                          <h4 className="">Daniel Juárez</h4>
+                          <p>Ejecutivo Autos</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/jose-alfredo-jimenez.jpg" className="img-fluid" alt='José Alfredo Jimenez' />
+                          <h4 className="">José Alfredo Jimenez</h4>
+                          <p>Ejecutivo Seguros Empresariales</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/lucila-lopez.jpg" className="img-fluid" alt='Lucila Lopez' />
+                          <h4 className="">Lucila Lopez</h4>
+                          <p>Ejecutiva Seguros Empresariales</p>
+                        </div>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <div className='level-3 rectangle'>
+                      <img src="./../organigrama/monica-flores.jpg" className="img-fluid" alt='Mónica Flores' />
+                      <h3 className="">Mónica Flores</h3>
+                      <p>Gerente de Operación Vida</p>
+                    </div>
+                    <ol className="level-4-wrapper">
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/uriel-rosas.jpg" className="img-fluid" alt='Uriel Rosas' />
+                          <h4 className="">Uriel Rosas</h4>
+                          <p>Ejecutiva Vida</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div className='level-4 rectangle'>
+                          <img src="./../organigrama/gaby-molina.jpg" className="img-fluid" alt='Gabriela Molina' />
+                          <h4 className="">Gabriela Molina</h4>
+                          <p>Ejecutiva Cobranza y Traspasos</p>
+                        </div>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <div className='level-2 rectangle'>
+                  <img src="./../organigrama/rafael-martinez.jpg" className="img-fluid" alt='Rafa Martinez' />
+                  <h2 className="">Rafa Martínez</h2>
+                  <p>Director Comercial</p>
+                </div>
+                <ol className="level-3-wrapper">
+                <li>
+                    <div className="level-3 rectangle">
+                      <img src="./../organigrama/carlos-saloma.jpg" className="img-fluid" alt='Carlos Saloma' />
+                      <h3 className="">Carlos Saloma</h3>
+                      <p>Gerente de desarrollo</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="level-3 rectangle">
+                      <img src="./../organigrama/rafael-martinez-jr.jpg" className="img-fluid" alt='Rafa Martinez Jr' />
+                      <h3 className="">Rafa Martínez</h3>
+                      <p>Gerente de desarrollo</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className='level-3 rectangle'>
+                      <img src="./../organigrama/perla-cabrera.jpg" className="img-fluid" alt='Perla Cabrera' />
+                      <h3 className="">Perla Cabrera</h3>
+                      <p>Gerente de reclutamiento</p>
+                    </div>
+                    <ol className="level-4-wrapper">
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/barusch-peralta.jpg" className="img-fluid" alt='Barusch Peralta' />
+                          <h4 className="">Barusch Peralta</h4>
+                          <p>Ejecutiva de atracción de talento</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/claudia-mendoza.jpg" className="img-fluid" alt='Claudia Mendoza' />
+                          <h4 className="">Claudia Mendoza</h4>
+                          <p>Ejecutiva de atracción de talento</p>
+                        </div>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <ol className="level-4-wrapper">
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/norma-romero.jpg" className="img-fluid" alt='Norma Romero' />
+                          <h4 className="">Norma Romero</h4>
+                          <p>Gerente de promoción - Vida</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/alvar-perez.jpg" className="img-fluid" alt='Alvar Perez' />
+                          <h4 className="">Alvar Pérez</h4>
+                          <p>Gerente Promoción Patrimonial</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/alberto-bote.jpg" className="img-fluid" alt='Alberto Bote' />
+                          <h4 className="">Alberto bote</h4>
+                          <p>Gerente Promoción GMM</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/ricardo-monroy.jpg" className="img-fluid" alt='Ricardo Monroy' />
+                          <h4 className="">Ricardo Monroy</h4>
+                          <p>Gerente de Promoción Empresariales</p>
+                        </div>
+                      </li>
+                      <li>
+                      <div className='level-4 rectangle'>
+                          <img src="./../organigrama/itzel-magali.jpg" className="img-fluid" alt='Itzel Magali' />
+                          <h4 className="">Itzel Magali</h4>
+                          <p>Seguimiento a logros</p>
+                        </div>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+
+
+          {/* End: Organigrama Responsive */}
           <div className="container-full">
             <div className="row gy-4">
               <div className="col-xl-2 col-md-2 d-flex m-auto" data-aos="fade-up" data-aos-delay={100}>
@@ -102,7 +292,7 @@ const Home = () => {
                 </div>{/* End Team Member */}
               </div>
               <div className='col-6 commBg'>
-                <div className="col-xl-4 col-md-4 d-flex mx-auto" data-aos="fade-up" data-aos-delay={200}>
+                <div data-aos="fade-up" data-aos-delay={200}>
                   <div className="member">
                     <img src="./../organigrama/rafael-martinez.jpg" className="img-fluid" alt='Fabián García' />
                     <h4>Rafa Martínez</h4>
@@ -117,7 +307,7 @@ const Home = () => {
             <div className='row'>
               <div className='col-6 opsBg'>
                 <div className='row d-flex m-auto'>
-                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div data-aos="fade-up" data-aos-delay={300}>
                     <div className="member">
                       <img src="./../organigrama/alejandro-torres.jpg" className="img-fluid" alt='Alejandro Torres' />
                       <h4>Alejandro Torres</h4>
@@ -125,7 +315,7 @@ const Home = () => {
                     </div>
                   </div>
                   {/* Monica Flores */}
-                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div data-aos="fade-up" data-aos-delay={300}>
                     <div className="member">
                       <img src="./../organigrama/monica-flores.jpg" className="img-fluid" alt='Mónica Flores' />
                       <h4>Monica Flores</h4>
@@ -138,7 +328,7 @@ const Home = () => {
               <div className='col-6 commBg'>
                 <div className='row mx-auto'>
                   {/* Perla Cabrera */}
-                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div data-aos="fade-up" data-aos-delay={300}>
                     <div className="member">
                       <img src="./../organigrama/perla-cabrera.jpg" className="img-fluid" alt='Perla Cabrera' />
                       <h4>Perla Cabrera</h4>
@@ -146,7 +336,7 @@ const Home = () => {
                     </div>
                   </div>
                   {/* Carlos Saloma */}
-                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div data-aos="fade-up" data-aos-delay={300}>
                     <div className="member">
                       <img src="./../organigrama/carlos-saloma.jpg" className="img-fluid" alt='Carlos Saloma' />
                       <h4>Carlos Saloma</h4>
@@ -154,7 +344,7 @@ const Home = () => {
                     </div>
                   </div>{/* End Team Member */}
                   {/* Rafael Martinez Jr */}
-                  <div className="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                  <div data-aos="fade-up" data-aos-delay={300}>
                     <div className="member">
                       <img src="./../organigrama/rafael-martinez.jpg" className="img-fluid" alt='Rafael Martinez' />
                       <h4>Rafael Martínez Jr.</h4>
@@ -168,25 +358,23 @@ const Home = () => {
               <div className='col-6 opsBg'>
                 <div className='row'>
                 {/* Uriel Rosas */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/uriel-rosas.jpg" className="img-fluid" alt='Uriel Rosas' />
                     <h4>Uriel Rosas</h4>
                     <span>Ejecutivo de vida</span>
-                    
                   </div>
                 </div>
                 {/* Gabriela molina */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/gaby-molina.jpg" className="img-fluid" alt='Gabriela Molina' />
                     <h4>Gabriela Molina</h4>
                     <span>Ejecutiva de cobranza y traspasos</span>
-                    
                   </div>
                 </div>
                 {/* Heidi Sanchez */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/heidi-sanchez.jpg" className="img-fluid" alt='Heidi Sanchez' />
                     <h4>Heidi Sanchez</h4>
@@ -195,7 +383,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Evelyn Arias */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/evelyn-arias.jpg" className="img-fluid" alt='Evelyn Arias' />
                     <h4>Evelyn Arias</h4>
@@ -204,7 +392,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Itzel Serra */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/itzel-serra.jpg" className="img-fluid" alt='Itzel Serra' />
                     <h4>Itzel Serra</h4>
@@ -213,7 +401,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Ramces Rodriguez */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/ramces-rodriguez.jpg" className="img-fluid" alt='Ramces Rodriguez' />
                     <h4>Ramces Rodriguez</h4>
@@ -222,7 +410,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Daniel Juarez */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/daniel-juarez.jpg" className="img-fluid" alt='Daniel Juarez' />
                     <h4>Daniel Juarez</h4>
@@ -231,7 +419,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Jose Alfredo Jimenez */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/jose-alfredo-jimenez.jpg" className="img-fluid" alt='José Alfredo Jimenez' />
                     <h4>José Alfredo Jimenez</h4>
@@ -240,7 +428,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Lucila Lopez */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/lucila-lopez.jpg" className="img-fluid" alt='Lucila Lopez' />
                     <h4>Lucila Lopez</h4>
@@ -254,7 +442,7 @@ const Home = () => {
               <div className='col-6 commBg'>
                 <div className='row'>
                 {/* Barusch Peralta */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/barusch-peralta.jpg" className="img-fluid" alt='Barusch Peralta' />
                     <h4>Barusch Peralta</h4>
@@ -263,7 +451,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Claudia mendoza */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/claudia-mendoza.jpg" className="img-fluid" alt='Claudia Mendoza' />
                     <h4>Claudia Mendoza</h4>
@@ -272,7 +460,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Norma Romero */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div  data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/norma-romero.jpg" className="img-fluid" alt='Norma Romero' />
                     <h4>Norma Romero</h4>
@@ -281,7 +469,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Alvar Pérez */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/alvar-perez.jpg" className="img-fluid" alt='Alvar Perez' />
                     <h4>Alvar Perez</h4>
@@ -290,7 +478,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Alberto Bote */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/alberto-bote.jpg" className="img-fluid" alt='Albero Bote' />
                     <h4>Alberto Bote</h4>
@@ -299,7 +487,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Ricardo Monroy */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/ricardo-monroy.jpg" className="img-fluid" alt='Ricardo Monroy' />
                     <h4>Ricardo Monroy</h4>
@@ -308,7 +496,7 @@ const Home = () => {
                   </div>
                 </div>
                 {/* Itzel Magali */}
-                <div className="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay={300}>
+                <div data-aos="fade-up" data-aos-delay={300}>
                   <div className="member">
                     <img src="./../organigrama/itzel-magali.jpg" className="img-fluid" alt='Itzel Magali' />
                     <h4>Itzel Magali</h4>
