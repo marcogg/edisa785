@@ -1,4 +1,6 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from "react-scroll"
 
 const Nav = () => {
   return (
@@ -6,14 +8,13 @@ const Nav = () => {
       <div className="topbar d-flex align-items-center">
         <div className="container d-flex justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center">
-            <i className="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-            <i className="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+            <i className="bi bi-envelope d-flex align-items-center"><Link onClick={(e)=>{e.preventDefault(); window.location='mailto:contacto@edisa785.com'}}>contacto@edisa785.com</Link></i>
+            <i className="bi bi-phone d-flex align-items-center ms-4"><span><Link onClick={(e)=>{e.preventDefault(); window.location='tel:5512462462'}}>+52 55 1246 2462</Link></span></i>
           </div>
           <div className="social-links d-none d-md-flex align-items-center">
-            <a href="#" className="twitter"><i className="bi bi-twitter-x" /></a>
-            <a href="#" className="facebook"><i className="bi bi-facebook" /></a>
-            <a href="#" className="instagram"><i className="bi bi-instagram" /></a>
-            <a href="#" className="linkedin"><i className="bi bi-linkedin" /></a>
+            <Link to='https://www.facebook.com/edisa785' className="facebook"><i className="bi bi-facebook" /></Link>
+            <Link to='https://www.instagram.com/edisa785/' className="instagram"><i className="bi bi-instagram" /></Link>
+            <Link to='https://www.linkedin.com/company/edisa785/?originalSubdomain=mx' className="linkedin"><i className="bi bi-linkedin" /></Link>
           </div>
         </div>
       </div>
@@ -22,19 +23,18 @@ const Nav = () => {
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <Link to='/' className="logo d-flex align-items-center">
             {/* Uncomment the line below if you also wish to use an image logo */}
-            <img src="../edisa785_logo-negativo.svg" alt="Edisa 785" width={400} />
+            <img src="../../edisa785_logo-negativo.svg" alt="Edisa 785" width={400} />
             {/* <h1 className="sitename">Edisa 785</h1> */}
             {/* <span>.</span> */}
           </Link>
           <nav id="navmenu" className="navmenu">
             <ul>
-              <li><Link to="#hero" className="active">Inicio<br /></Link></li>
-              <li><Link to="#about">Nosotros</Link></li>
-              {/* <li><Link href="#services">Services</Link></li> */}
-              <li><Link to="#portfolio">Experiencias</Link></li>
-              <li><Link to="#portfolio">Estructura</Link></li>
-              <li><Link to='#mural'>Mural de la fama</Link></li>
-              <li><Link to="#contact">Contacto</Link></li>
+              <li><ScrollLink to='inicio'>Inicio</ScrollLink></li>
+              <li><ScrollLink to='nosotros'>Nosotros</ScrollLink></li>
+              <li><ScrollLink to='experiencias'>Experiencias</ScrollLink></li>
+              <li><ScrollLink to='organigrama'>Estructura</ScrollLink></li>
+              <li><ScrollLink to='mural-fama'>Mural de la fama</ScrollLink></li>
+              <li><ScrollLink to='contacto'>Contacto</ScrollLink></li>
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
           </nav>

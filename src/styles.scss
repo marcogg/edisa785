@@ -1,3 +1,5 @@
+@import './index.css';
+
 $orange: #f88d2a;
 $blue: #202945;
 
@@ -9,11 +11,23 @@ $blue: #202945;
 
 // Organigrama
 :root {
-    --level-1: #8dccad;
-    --level-2: #f5cc7f;
-    --level-3: #7b9fe0;
-    --level-4: #f27c8d;
-    --black: black;
+    --level-1: #ffffff;
+    --level-2: #dde6ff;
+    --level-3: #d8dce9;
+    --level-4: #ffffff;
+    --black: #202245;
+    --background-color: #ffffff;
+    /* Background color for the entire website, including individual sections */
+    --default-color: #222222;
+    /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #202945;
+    /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #f88d2a;
+    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff;
+    /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff;
+    /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 * {
@@ -40,9 +54,15 @@ body {
 
 .rectangle {
     position: relative;
-    padding: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 15px;
 
     & img {
         border-radius: 14px;
@@ -53,7 +73,7 @@ body {
 /* LEVEL-1 STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .level-1 {
-    width: 50%;
+    width: 30%;
     margin: 0 auto 40px;
     background: var(--level-1);
 }
@@ -74,6 +94,15 @@ body {
         font-family: var(--heading-font);
         font-size: 18px;
         font-weight: 700;
+        line-height: 1.2rem;
+        margin-top: 6px;
+    }
+
+    & p {
+        font-family: var(--default-font);
+        font-size: 12px;
+        font-style: italic;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
     }
 }
 
@@ -90,8 +119,9 @@ body {
     content: "";
     position: absolute;
     top: -20px;
-    left: 25%;
-    width: 50%;
+    left: 29.5%;
+    left: 27.5%;
+    width: 48.3%;
     height: 2px;
     background: var(--black);
 }
@@ -156,6 +186,15 @@ body {
         font-family: var(--heading-font);
         font-size: 18px;
         font-weight: 700;
+        line-height: 1.2rem;
+        margin-top: 6px;
+    }
+
+    & p {
+        font-family: var(--default-font);
+        font-size: 12px;
+        font-style: italic;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
     }
 }
 
@@ -175,8 +214,8 @@ body {
     content: "";
     position: absolute;
     top: -20px;
-    left: calc(25% - 5px);
-    width: calc(50% + 10px);
+    left: calc(30% - 2px);
+    width: calc(46% + 11px);
     height: 2px;
     background: var(--black);
 }
@@ -202,6 +241,15 @@ body {
         font-family: var(--heading-font);
         font-size: 18px;
         font-weight: 700;
+        line-height: 1.2rem;
+        margin-top: 6px;
+    }
+
+    & p {
+        font-family: var(--default-font);
+        font-size: 12px;
+        font-style: italic;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
     }
 }
 
@@ -238,6 +286,15 @@ body {
         font-family: var(--heading-font);
         font-size: 18px;
         font-weight: 700;
+        line-height: 1.2rem;
+        margin-top: 6px;
+    }
+
+    & p {
+        font-family: var(--default-font);
+        font-size: 12px;
+        font-style: italic;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
     }
 }
 
@@ -245,9 +302,10 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0%;
-    transform: translate(-100%, -50%);
-    width: 20px;
+    left: -20%;
+    z-index: 20;
+    transform: translate(-53%, -50%);
+    width: 50px;
     height: 2px;
     background: var(--black);
 }
@@ -297,3 +355,12 @@ body {
 }
 
 // End: Organigrama
+
+.box-careers {
+    padding: 1.5rem;
+    box-shadow: 5px 5px 15px #00000012;
+    border: #c8d7e5 solid 1px;
+    border-radius: 20px;
+    margin: 2%;
+    width: 45%;
+}
