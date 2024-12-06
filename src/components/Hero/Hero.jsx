@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import ScrollToSection from '../Hooks/ScrollToView/ScrollToView'
 import './../../App.scss'
+import { scroller } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
             <h2 className="text-orange text-left"><span> Más de 36 años de experiencia en el mercado, </span><span className="text-blue">enfocada en el sector de protección, ahorro e inversiones, desarrollando empresarios en el sector asegurador.</span></h2>
               <p className='text-left'>Enlace y desarrollo integral SA de CV. empresa 100% mexicana</p>
               <div className="d-flex">
-                <button onClick={ScrollToSection('equipo')} className="btn-get-started">Únete al equipo</button>
+                <button onClick={()=>scroller.scrollTo('contacto')} className="btn-get-started">Únete al equipo</button>
               </div>
             </div>
             <div className="col-lg-5 order-1 order-lg-2">

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from "react-scroll"
+import '../../styles.scss'
 
 const Nav = () => {
   return (
@@ -23,7 +24,7 @@ const Nav = () => {
         <div className="container position-relative d-flex align-items-center justify-content-between">
           <Link to='/' className="logo d-flex align-items-center">
             {/* Uncomment the line below if you also wish to use an image logo */}
-            <img src="../../edisa785_logo-negativo.svg" alt="Edisa 785" width={400} />
+            <img src="../../edisa785_logo-negativo.svg" alt="Edisa 785" className='img-logo' />
             {/* <h1 className="sitename">Edisa 785</h1> */}
             {/* <span>.</span> */}
           </Link>

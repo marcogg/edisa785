@@ -41,7 +41,7 @@ ol {
 }
 
 body {
-    margin: 50px 0 100px;
+    margin: 0;
     text-align: center;
     font-family: "Inter", sans-serif;
 }
@@ -336,6 +336,7 @@ body {
     .level-2-wrapper::after,
     .level-2::after {
         display: block;
+        padding: 0;
     }
 
     .level-2-wrapper {
@@ -352,15 +353,27 @@ body {
     .level-2-wrapper>li:not(:first-child) {
         margin-top: 50px;
     }
+
+    .level-3-wrapper {
+        padding: 0;
+    }
 }
 
 // End: Organigrama
 
 .box-careers {
-    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.65rem;
     box-shadow: 5px 5px 15px #00000012;
     border: #c8d7e5 solid 1px;
     border-radius: 20px;
     margin: 2%;
     width: 45%;
+}
+
+.img-logo {
+    width: clamp(200px, 15%, 400px);
 }

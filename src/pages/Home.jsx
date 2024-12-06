@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(()=>{
     AOS.init();
   },[])
-  
+
   return (
     <>
       {/* Navigation */}
@@ -362,17 +362,16 @@ const Home = () => {
         {/* Recent Posts Section */}
         <section id="mural-fama" className="recent-posts section">
           {/* Section Title */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Mural de la fama</h2>
-            <p>Conoce nuestros mejores empresarios</p>
+          <div className="container section-title line-center" data-aos="fade-up">
+            <h2 className='text-center'>Mural de la fama</h2>
           </div>{/* End Section Title */}
           <div className="container">
             <div className="row gy-4">
-              <div className="col-xl-6 col-md-6" data-aos="fade-up" data-aos-delay={100}>
+              <div className="col-xl-6 col-md-6 offset-3" data-aos="fade-up" data-aos-delay={100}>
                 <article>
-                  {/* <div className="post-img">
-                    <img src="assets/img/blog/blog-1.jpg" alt className="img-fluid" />
-                  </div> */}
+                  <div className="post-img">
+                    <img src='../../trophy.png' width={200} />
+                  </div>
                   <p className="post-category">Grupo Apro</p>
                   <h2 className="title">
                     <p>Grupo APRO ha ganado 15 veces el Premio Internacional de Calidad otorgado por la Life Insurance Marketing and Research Association. Además, es miembro de The Million Dollar Round Table, que reconoce a los mejores agentes de seguros de vida y asesores financieros. En más de 30 años, ha formado parte del Consejo de Productores de GNP, logrando 14 campeonatos y 9 subcampeonatos en Vida, Autos, Gastos Médicos y PYMES.
@@ -380,9 +379,6 @@ const Home = () => {
                   </h2>
                 </article>
               </div>{/* End post list item */}
-              <div className='col-xl-3 col-md-3 offset-xl-2' data-aos="fade-up" data-aos-delay={100}>
-                  <img src='../../trophy.png' className='img-fluid'/>
-              </div>
             </div>{/* End recent posts list */}
           </div>
         </section>{/* /Recent Posts Section */}
@@ -435,9 +431,9 @@ const Home = () => {
         <Element name='contacto'>
         <section id="contacto" className="contact section">
           {/* Section Title */}
-          <div className="container section-title" data-aos="fade-up">
-            <h2>Contáctanos</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <div className="container line-center section-title" data-aos="fade-up">
+            <h2 className='text-center'>Contáctanos</h2>
+            {/* <p>Inicia tu futuro con nosotros</p> */}
           </div>{/* End Section Title */}
           <div className="container" data-aos="fade-up" data-aos-delay={100}>
             <div className="row gx-lg-0 gy-4">
