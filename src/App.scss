@@ -77,3 +77,9 @@
   font-size: 3rem;
   color: var(--accent-color);
 }
+
+@media screen and (max-width:768px) {
+  .box-careers {
+    width: 100% !important
+  }
+}

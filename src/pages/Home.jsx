@@ -104,7 +104,7 @@ const Home = () => {
                       <div className="level-3 rectangle">
                         <img src="./../organigrama/alejandro-torres.jpg" className="img-fluid" alt='Alejandro Torres' />
                       <h3>Alejandro Torres</h3>
-                      <p>Gerente de operativo</p>
+                      <p>Gerente operativo</p>
                       </div>
                       
                       <ol className="level-4-wrapper">
@@ -163,7 +163,7 @@ const Home = () => {
                       <div className='level-3 rectangle'>
                         <img src="./../organigrama/monica-flores.jpg" className="img-fluid" alt='Mónica Flores' />
                         <h3 className="">Mónica Flores</h3>
-                        <p>Gerente de Operación Vida</p>
+                        <p>Gerente operativo</p>
                       </div>
                       <ol className="level-4-wrapper">
                       <li className='level-4'>
@@ -255,7 +255,7 @@ const Home = () => {
                         <div className='rectangle'>
                             <img src="./../organigrama/ricardo-monroy.jpg" className="img-fluid" alt='Ricardo Monroy' />
                             <h4 className="">Ricardo Monroy</h4>
-                            <p>Gerente de Promoción Empresariales</p>
+                            <p>Gerente de Promoción Empresarial</p>
                           </div>
                         </li>
                         <li className='level-4'>
@@ -367,7 +367,7 @@ const Home = () => {
           </div>{/* End Section Title */}
           <div className="container">
             <div className="row gy-4">
-              <div className="col-xl-6 col-md-6 offset-3" data-aos="fade-up" data-aos-delay={100}>
+              <div className="col-xl-6 col-md-6 offset-lg-3" data-aos="fade-up" data-aos-delay={100}>
                 <article>
                   <div className="post-img">
                     <img src='../../trophy.png' width={200} />
@@ -400,23 +400,23 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-8" data-aos="fade-up" data-aos-delay={200}>
+              <div className="col-lg-8 col-md-8 col-xs-12" data-aos="fade-up" data-aos-delay={200}>
                 <div className='container'>
                   <div className='row'>
-                    <div className='col-md-6 col-lg-6 col-xl-6 box-careers'>
+                    <div className='col-md-6 col-12 col-lg-6 col-xl-6 box-careers'>
                     <i className="bi bi-cash-stack iconXl" />
                       <h3>Excelentes ingresos</h3>
                     </div>
-                    <div className='col-md-6 col-lg-6 col-xl-6 box-careers'>
+                    <div className='col-md-6 col-12 col-lg-6 col-xl-6 box-careers'>
                     <i className="bi bi-emoji-laughing iconXl" />
                       <h3>Mejora tu calidad de vida</h3>
                     </div>
-                    <div className='col-md-6 col-lg-6 col-xl-6 box-careers'>
+                    <div className='col-md-6 col-12 col-lg-6 col-xl-6 box-careers'>
                     <i className="bi bi-briefcase-fill iconXl" />
                       <h3>Crea tupropio negocio</h3>
                       <p className=''>Que contribuya en la historia de cada familia y genere empleos en el país. Implementa las herramientas apropoiadas de ventas para generar lazos de confianza y relaciones estrechas a largo placo con clientes, agencia y aseguradora.</p>
                     </div>
-                    <div className='col-md-6 col-lg-6 col-xl-6 box-careers'>
+                    <div className='col-md-6 col-12 col-lg-6 col-xl-6 box-careers'>
                     <i className="bi bi-arrow-up-right-circle iconXl" />
                       <h3>Gran mercado potencial</h3>
                     </div>

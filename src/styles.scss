@@ -315,7 +315,7 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 700px) {
     .rectangle {
-        padding: 20px 10px;
+        padding: 5px;
     }
 
     .level-1,
@@ -356,6 +356,32 @@ body {
 
     .level-3-wrapper {
         padding: 0;
+
+        &::before {
+            left: calc(25% - 5px);
+            width: calc(53%);
+        }
+    }
+
+    .level-3 p {
+        font-size: clamp(10px, 1rem, 12px);
+    }
+
+    .level-4 {
+        &::before {
+            left: -29%;
+            transform: translate(-60%, -50%);
+        }
+
+        & h4 {
+            font-size: clamp(11px, 1.15rem, 13px);
+            line-height: 0.9em;
+        }
+
+        & p {
+            font-size: clamp(8px, 0.75rem, 11px);
+            line-height: 0.95em;
+        }
     }
 }
 
