@@ -18,9 +18,12 @@ const Hero = () => {
                 <button onClick={()=>scroller.scrollTo('contacto')} className="btn-get-started">Únete al equipo</button>
               </div>
             </div>
-            <div className="col-lg-5 order-1 order-lg-2">
-              <img src="../hero_v2.webp" className="img-fluid" alt />
-            </div>
+            <div className="col-lg-6 order-1 order-lg-2">
+              <picture>
+                <source srcSet="../hero_v3.webp" type="image/webp" />
+                <img src="../hero_v3.png" className="img-fluid black-white" alt />
+              </picture>
+          </div>
           </div>
         </div>
         <div className="icon-boxes position-relative" data-aos="fade-up" data-aos-delay={200}>
@@ -42,7 +45,7 @@ const Hero = () => {
               <div className="col-xl-3 col-md-6">
                 <div className="icon-box">
                   <div className="icon"><i className="bi bi-star-fill" style={{color:'#f88d2a'}} /></div>
-                  <h4 className="title"><span className="text-left">Desarrollamos empresarios en el sector asegurador
+                  <h4 className="title"><span className="text-left">Desarrollamos empresarios en el sector asegurador.
                   </span></h4>
                 </div>
               </div>{/*End Icon Box */}

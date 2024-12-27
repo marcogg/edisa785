@@ -26,29 +26,11 @@ const Home = () => {
           {/* Section Title */}
           <div className="container section-title" data-aos="fade-up">
             <h2 className='text-left'>Nosotros<br /></h2>
-            <p className='text-left'>Hace 36 años él — Act. Nicolás García Luna fundó Enlace como una de las direcciones mas fuertes y distinguidas de GNP.... Comprometida con el éxito y grandeza.
-              Basados en la responsabilidad social, se ha diferenciado por el excelente desarrollo de empresarios con responsabilidad, ética y la calidad humana que nos caracteriza, llegando a obtener la máxima distinción otorgada por GNP en diversas ocasiones.</p>
+            <p className='text-left'> Enlace y desarrollo Integral S.A. de C.V. somos una empresa con más de 36 años en el mercado, enfocada en el sector financiero, salud e inversiones. Nos hemos diferenciado por el excelente desarrollo de empresarios basados en la responsabilidad social, ética profesional y la calidad humana que nos caracteriza.<br />
+            Basados en la responsabilidad social, se ha diferenciado por el excelente desarrollo de empresarios con responsabilidad, ética y la calidad humana que nos caracteriza, llegando a obtener la máxima distinción otorgada por GNP en diversas ocasiones.</p>
           </div>{/* End Section Title */}
         </section>{/* /About Section */}
         </Element>
-        {/* Begin: Masonry */}
-        <section id="clients" className="clients section">
-          <div className="container">
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-            >
-              <Masonry gutter='15px'>
-                <img src='../../oficinas_edisa.jpg' className='img-fluid rounded-border' />
-                <img src='../../oficinas_edisa2.jpg' className='img-fluid rounded-border' />
-                <img src='../../oficinas_edisa3.jpg' className='img-fluid rounded-border' />
-                <img src='../../oficinas-edisa-reforma.jpg' className='img-fluid rounded-border' />
-                <img src='../../oficinas-edisa4.jpg' className='img-fluid rounded-border' />
-                <img src='../../sala-juntas-edisa.jpg' className='img-fluid rounded-border' />
-              </Masonry>
-            </ResponsiveMasonry>
-          </div>
-        </section>
-        {/* End: Masonry */}
         {/* Stats Section */}
         <Element name='nosotros'>
         <section id="nosotros" className="stats section dark-background">
@@ -66,7 +48,6 @@ const Home = () => {
                     <div className="stats-item d-flex">
                       <div className='text-left'>
                         <p>Es una dirección de agencia de la aseguradora <Link to='https://www.gnp.com.mx/'>GNP</Link> donde se gestionan y coordinan las actividades relacionadas con la venta de pólizas, atención a clientes, tramitación de siniestros y otros servicios relacionados con los seguros. Esta dirección es donde trabajan los agentes de seguros y personal administrativo de la aseguradora para brindar servicios a los clientes.</p>
-                        <p>Conoce nuestras oficinas, ubicadas en Av. Paseo de la Reforma 144 Piso #1, Cuahutemoc, Ciudad de México</p>
                       </div>
                     </div>
                   </div>{/* End Stats Item */}
@@ -76,6 +57,27 @@ const Home = () => {
           </div>
         </section>{/* /Stats Section */}
         </Element>
+        {/* Begin: Masonry */}
+        <section id="clients" className="clients section">
+          <div className='container section-title' data-aos="fade-up">
+            <h2 className='text-left'>Conoce nuestras oficinas, ubicadas en Av. Paseo de la Reforma 144 <br />Piso #1, Cuahutemoc, Ciudad de México</h2>
+          </div>
+          <div className="container">
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+            >
+              <Masonry gutter='15px'>
+                <img src='../../oficinas_edisa.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas_edisa2.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas_edisa3.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas-edisa-reforma.jpg' className='img-fluid rounded-border' />
+                <img src='../../oficinas-edisa4.jpg' className='img-fluid rounded-border' />
+                <img src='../../sala-juntas-edisa.jpg' className='img-fluid rounded-border' />
+              </Masonry>
+            </ResponsiveMasonry>
+          </div>
+        </section>
+        {/* End: Masonry */}
         {/* Team Section */}
         <Element name='organigrama'>
           <section id="organigrama" className="team section">

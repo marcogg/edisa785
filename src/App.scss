@@ -83,3 +83,21 @@
     width: 100% !important
   }
 }
+
+.overlay-gradient {
+  // background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 20%);
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // z-index: 1;
+  // display: block;
+}
+
+.container-overlay {
+  // position: relative;
+  // overflow: hidden;
+}
+
+.black-white {
+  filter: contrast(1.15);
+}
