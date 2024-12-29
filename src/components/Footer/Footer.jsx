@@ -7,7 +7,7 @@ const Footer = () => {
       <footer id="footer" className="footer accent-background">
         <div className="container footer-top">
           <div className="row gy-4">
-            <div className="col-lg-6 col-md-12 footer-about">
+            <div className="col-lg-4 col-md-12 footer-about">
               <Link href="index.html" className="logo d-flex align-items-start">
                 <img src='/../../edisa785_logo.svg' />
               </Link>
@@ -18,17 +18,7 @@ const Footer = () => {
                 <Link><i className="bi bi-linkedin" /></Link>
               </div>
             </div>
-            {/* <div className="col-lg-2 col-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Product Management</a></li>
-                <li><a href="#">Marketing</a></li>
-                <li><a href="#">Graphic Design</a></li>
-              </ul>
-            </div> */}
-            <div className="col-lg-6 col-md-12 footer-contact text-center text-md-start">
+            <div className="col-lg-4 offset-lg-2 col-md-12 footer-contact text-center text-md-start">
               <h4>Contáctanos</h4>
               <p>Av. P.º de la Reforma 144, Juárez, Cuauhtémoc</p>
               <p>06600 Ciudad de México, CDMX</p>
