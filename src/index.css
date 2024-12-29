@@ -1307,9 +1307,12 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  padding: 40px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-shadow: 0px 0 30px rgb(233 193 106 / 10%);
   height: 100%;
+  border-radius: 15px;
+  border: solid 1px var(--accent-color);
+  text-align: left;
 }
 
 .services .service-item .icon {
@@ -1320,7 +1323,7 @@ section,
 }
 
 .services .service-item .icon i {
-  color: color-mix(in srgb, var(--heading-color), transparent 30%);
+  color: color-mix(in srgb, var(--accent-color), transparent 30%);
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -1881,7 +1884,7 @@ section,
 .recent-posts article {
   background: var(--surface-color);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 10%;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;

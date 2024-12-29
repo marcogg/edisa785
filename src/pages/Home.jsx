@@ -6,6 +6,8 @@ import Nav from '../components/Nav/Nav'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { Element } from "react-scroll"
 import AOS from 'aos'
+import HubspotForm from 'react-hubspot-form'
+import './../../src/App.scss'
 
 const Home = () => {
 
@@ -101,6 +103,11 @@ const Home = () => {
                     <h2 className="">Fabián García</h2>
                     <p>Director Operativo</p>
                   </div>
+                  <div className='level-2 rectangle'>
+                    <img src="./../organigrama/paty-palomino.jpg" className="img-fluid" alt='Fabián García' />
+                    <h2 className="">Paty Palomino</h2>
+                    <p>Directora Líneas Personales</p>
+                  </div>
                   <ol className="level-3-wrapper">
                     <li>
                       <div className="level-3 rectangle">
@@ -110,49 +117,49 @@ const Home = () => {
                       </div>
                       
                       <ol className="level-4-wrapper">
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                           <div className='rectangle'>
                             <img src="./../organigrama/heidi-sanchez.jpg" className="img-fluid" alt='Heidi Sanchez' />
                             <h4 className="">Heidi Sanchez</h4>
                             <p>Siniestros</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                         <div className='rectangle'>
                             <img src="./../organigrama/evelyn-arias.jpg" className="img-fluid" alt='Evelyn Arias' />
                             <h4 className="">Evelyn Arias</h4>
                             <p>Ejecutiva GMM</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                           <div className='rectangle'>
                             <img src="./../organigrama/itzel-serra.jpg" className="img-fluid" alt='Itzel Serra' />
                             <h4 className="">Itzel Serra</h4>
                             <p>Ejecutiva GMM</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                         <div className='rectangle'>
                             <img src="./../organigrama/ramces-rodriguez.jpg" className="img-fluid" alt='Ramces Rodriguez' />
                             <h4 className="">Ramces Rodriguez</h4>
                             <p>Ejecutivo GMM</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                         <div className='rectangle'>
                             <img src="./../organigrama/daniel-juarez.jpg" className="img-fluid" alt='Daniel Juarez' />
                             <h4 className="">Daniel Juárez</h4>
                             <p>Ejecutivo Autos</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                         <div className='rectangle'>
                             <img src="./../organigrama/jose-alfredo-jimenez.jpg" className="img-fluid" alt='José Alfredo Jimenez' />
                             <h4 className="">José Alfredo Jimenez</h4>
                             <p>Ejecutivo Seguros Empresariales</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                         <div className='rectangle'>
                             <img src="./../organigrama/lucila-lopez.jpg" className="img-fluid" alt='Lucila Lopez' />
                             <h4 className="">Lucila Lopez</h4>
@@ -168,14 +175,14 @@ const Home = () => {
                         <p>Gerente operativo</p>
                       </div>
                       <ol className="level-4-wrapper">
-                      <li className='level-4'>
+                      <li className='level-4 left'>
                         <div className='rectangle'>
                             <img src="./../organigrama/uriel-rosas.jpg" className="img-fluid" alt='Uriel Rosas' />
                             <h4 className="">Uriel Rosas</h4>
                             <p>Ejecutiva Vida</p>
                           </div>
                         </li>
-                        <li className='level-4'>
+                        <li className='level-4 left'>
                           <div className='rectangle'>
                             <img src="./../organigrama/gaby-molina.jpg" className="img-fluid" alt='Gabriela Molina' />
                             <h4 className="">Gabriela Molina</h4>
@@ -192,46 +199,15 @@ const Home = () => {
                     <h2 className="">Rafa Martínez</h2>
                     <p>Director Comercial</p>
                   </div>
-                  <ol className="level-3-wrapper">
+                  <ol className="level-3-wrapper right">
                   <li>
                       <div className="level-3 comm rectangle">
                         <img src="./../organigrama/carlos-saloma.jpg" className="img-fluid" alt='Carlos Saloma' />
                         <h3 className="">Carlos Saloma</h3>
                         <p>Gerente de desarrollo</p>
                       </div>
-                    </li>
-                    <li>
-                      <div className="level-3 comm rectangle">
-                        <img src="./../organigrama/rafael-martinez-jr.jpg" className="img-fluid" alt='Rafa Martinez Jr' />
-                        <h3 className="">Rafa Martínez</h3>
-                        <p>Gerente de desarrollo</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className='level-3 comm rectangle'>
-                        <img src="./../organigrama/perla-cabrera.jpg" className="img-fluid" alt='Perla Cabrera' />
-                        <h3 className="">Perla Cabrera</h3>
-                        <p>Gerente de reclutamiento</p>
-                      </div>
-                      <ol className="level-4-wrapper">
-                        <li className='level-4'>
-                        <div className='rectangle'>
-                            <img src="./../organigrama/barusch-peralta.jpg" className="img-fluid" alt='Barusch Peralta' />
-                            <h4 className="">Barusch Peralta</h4>
-                            <p>Ejecutiva de atracción de talento</p>
-                          </div>
-                        </li>
-                        <li className='level-4'>
-                        <div className='rectangle'>
-                            <img src="./../organigrama/claudia-mendoza.jpg" className="img-fluid" alt='Claudia Mendoza' />
-                            <h4 className="">Claudia Mendoza</h4>
-                            <p>Ejecutiva de atracción de talento</p>
-                          </div>
-                        </li>
-                      </ol>
-                    </li>
-                    <li>
-                      <ol className="level-4-wrapper">
+                      <li>
+                      <ol className="level-4-wrapper right outflow">
                         <li className='level-4'>
                         <div className='rectangle'>
                             <img src="./../organigrama/norma-romero.jpg" className="img-fluid" alt='Norma Romero' />
@@ -269,7 +245,55 @@ const Home = () => {
                         </li>
                       </ol>
                     </li>
+                    </li>
+                    <li>
+                      <div className="level-3 comm rectangle">
+                        <img src="./../organigrama/rafael-martinez-jr.jpg" className="img-fluid" alt='Rafa Martinez Jr' />
+                        <h3 className="">Rafa Martínez</h3>
+                        <p>Gerente de desarrollo</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className='level-3 comm rectangle'>
+                        <img src="./../organigrama/perla-cabrera.jpg" className="img-fluid" alt='Perla Cabrera' />
+                        <h3 className="">Perla Cabrera</h3>
+                        <p>Gerente reclutamiento</p>
+                      </div>
+                      <ol className="level-4-wrapper right inflow">
+                        <li className='level-4 inflow'>
+                        <div className='rectangle'>
+                            <img src="./../organigrama/barusch-peralta.jpg" className="img-fluid" alt='Barusch Peralta' />
+                            <h4 className="">Barusch Peralta</h4>
+                            <p>Ejecutiva de atracción de talento</p>
+                          </div>
+                        </li>
+                        <li className='level-4 inflow'>
+                        <div className='rectangle'>
+                            <img src="./../organigrama/claudia-mendoza.jpg" className="img-fluid" alt='Claudia Mendoza' />
+                            <h4 className="">Claudia Mendoza</h4>
+                            <p>Ejecutiva de atracción de talento</p>
+                          </div>
+                        </li>
+                      </ol>
+                    </li>
+                    
                   </ol>
+                </li>
+              </ol>
+              <ol className='level-5-wrapper'>
+                <li className='level-5'>
+                  <div className='rectangle'>
+                    <img src="./../organigrama/leticia-ortega.jpg" className="img-fluid" alt='Leticia Ortega' />
+                    <h4 className="">Leticia Ortega</h4>
+                    <p>Asistente de dirección</p>
+                  </div>
+                </li>
+                <li className='level-5'>
+                <div className='rectangle'>
+                    <img src="./../organigrama/arlette-desentis.jpg" className="img-fluid" alt='Arlette Desentis' />
+                    <h4 className="">Arlette Desentis</h4>
+                    <p>Community Manager</p>
+                  </div>
                 </li>
               </ol>
             </div>
@@ -286,7 +310,7 @@ const Home = () => {
             </div>{/* End Section Title */}
             <div className="container">
               <div className="row gy-4">
-                <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay={100}>
+                <div className="col-lg-2 col-md-2" data-aos="fade-up" data-aos-delay={100}>
                   <div className="service-item  position-relative">
                     <div className="icon">
                       <i className="bi bi-globe-americas" />
@@ -295,31 +319,40 @@ const Home = () => {
                     <p>Gana un viaje internacional alcanzando metas específicas</p>
                   </div>
                 </div>{/* End Service Item */}
-                <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay={200}>
+                <div className="col-lg-2 col-md-2" data-aos="fade-up" data-aos-delay={200}>
                   <div className="service-item position-relative">
                     <div className="icon">
-                      <i className="bi bi-pin-map" />
+                      <img src='../../seminario.png' width={64} />
                     </div>
                     <h3>Seminario Nacional Edisa</h3>
                     <p>Aprende de las mejores prácticas del sector</p>
                   </div>
                 </div>{/* End Service Item */}
-                <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay={300}>
-                  <div className="service-item position-relative">
-                    <div className="icon">
-                      <i className="bi bi-signpost" />
-                    </div>
-                    <h3>Campamento de agentes</h3>
-                    <p>Conéctate con los líderes más destacados del sector</p>
-                  </div>
-                </div>{/* End Service Item */}
-                <div className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay={400}>
+                <div className="col-lg-2 col-md-2" data-aos="fade-up" data-aos-delay={400}>
                   <div className="service-item position-relative">
                     <div className="icon">
                       <i className="bi bi-star-fill" />
                     </div>
                     <h3>Congreso Oro, Platino, Diamante</h3>
                     <p>Disfruta de vacaciones pagadas por cumplir objetivos</p>
+                  </div>
+                </div>{/* End Service Item */}
+                <div className="col-lg-2 col-md-2" data-aos="fade-up" data-aos-delay={300}>
+                  <div className="service-item position-relative">
+                    <div className="icon">
+                    <i className="bi bi-people-fill" />
+                    </div>
+                    <h3>Campamento de agentes</h3>
+                    <p>Conéctate con los líderes más destacados del sector</p>
+                  </div>
+                </div>{/* End Service Item */}
+                <div className="col-lg-2 col-md-2" data-aos="fade-up" data-aos-delay={400}>
+                  <div className="service-item position-relative">
+                    <div className="icon">
+                    <img src='../../premio.png' width={64} />
+                    </div>
+                    <h3>Viaje Consejeros</h3>
+                    <p>Premiamos a nuestros agentes que obtienen el máximo reconocimiento de ventas por GNP</p>
                   </div>
                 </div>{/* End Service Item */}
               </div>
@@ -369,6 +402,23 @@ const Home = () => {
           </div>{/* End Section Title */}
           <div className="container">
             <div className="row gy-4">
+              {/* Confetti */}
+              <div className="confetti">
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+                <div className="confetti-piece"></div>
+              </div>
+              {/* End: Conffetti */}
               <div className="col-xl-6 col-md-6 offset-lg-3" data-aos="fade-up" data-aos-delay={100}>
                 <article>
                   <div className="post-img">
@@ -398,6 +448,9 @@ const Home = () => {
                     <li>Capacitación constante</li>
                     <li>Campañas motivacionales para aumentar tus ventas y alcanzar tus objetivos.</li>
                     <li>Seguimiento personalizado.</li>
+                    <li>Proyección de negocio a largo plazo.</li>
+                    <li>Ingresos excelentes y sin límites.</li>
+                    <li>Integralidad de cartera: vida, protección, ahorro, educación, inversión, autos hogar, mascotas, gastos médicos mayores y empresariales.</li>
                   </ul>
                   </p>
                 </div>
@@ -411,7 +464,7 @@ const Home = () => {
                     </div>
                     <div className='col-md-6 col-12 col-lg-6 col-xl-6 box-careers'>
                     <i className="bi bi-emoji-laughing iconXl" />
-                      <h3>Mejora tu calidad de vida</h3>
+                      <h3>Mejora tu calidad de vida de manera integral</h3>
                     </div>
                     <div className='col-md-6 col-12 col-lg-6 col-xl-6 box-careers'>
                     <i className="bi bi-briefcase-fill iconXl" />
@@ -428,6 +481,26 @@ const Home = () => {
             </div>
           </div>
         </section>{/* /Faq Section */}
+
+        {/* Listo para constuir tu éxito */}
+        <section className='cta section'>
+          <div className="container">
+            <div className="row gy-4">
+              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
+                <div className="content px-xl-5">
+                  <h2 className='text-center'>Listo para construir tu <span className='text-orange'><strong>éxito</strong></span></h2>
+                  <button className='btn-get-started'>Inicia tu carrera</button>
+                </div>
+              </div>
+              <div className='col-lg-6' data-aos="fade-up" data-aos-delay={200}>
+                <picture>
+                  <source srcSet='../../noveles-edisa.webp' type='image/webp' />
+                  <img src='../../noveles-edisa.png' className='img-fluid' />
+                </picture>
+            </div>
+          </div>
+          </div>
+        </section>
 
         {/* Contact Section */}
         <Element name='contacto'>
@@ -464,29 +537,15 @@ const Home = () => {
                   </div>{/* End Info Item */}
                 </div>
               </div>
-              <div className="col-lg-8">
-                <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade" data-aos-delay={100}>
-                  <div className="row gy-4">
-                    <div className="col-md-6">
-                      <input type="text" name="name" className="form-control" placeholder="Nombre completo" required />
-                    </div>
-                    <div className="col-md-6 ">
-                      <input type="email" className="form-control" name="email" placeholder="Email" required />
-                    </div>
-                    <div className="col-md-12">
-                      <input type="text" className="form-control" name="subject" placeholder="Aasunto" required />
-                    </div>
-                    <div className="col-md-12">
-                      <textarea className="form-control" name="message" rows={8} placeholder="Mensaje" required defaultValue={""} />
-                    </div>
-                    <div className="col-md-12 text-center">
-                      <div className="loading">Cargando</div>
-                      <div className="error-message" />
-                      <div className="sent-message">Gracias! En breve te contactaremos</div>
-                      <button type="submit">Enviar Mensaje</button>
-                    </div>
-                  </div>
-                </form>
+              <div className="col-lg-8 p-4">
+              <HubspotForm className='px-4'
+                        portalId='48705185'
+                        formId='a5d1d6e9-f25e-4237-ac66-5a2122bb6655'
+                        onSubmit={() => console.log('Enviado!')}
+                        onReady={(form) => console.log(`Hubspot Form ready: ${form}!`)}
+                        loading={<div>Cargando...</div>}
+                        style={{ display: 'flex' }}
+                      />
               </div>{/* End Contact Form */}
             </div>
           </div>

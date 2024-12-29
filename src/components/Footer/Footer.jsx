@@ -11,22 +11,12 @@ const Footer = () => {
               <Link href="index.html" className="logo d-flex align-items-start">
                 <img src='/../../edisa785_logo.svg' />
               </Link>
-              <p className="text-left">Enlace y desarrollo integral SA de CV. es una empresa 100% mexicana con más de 35 años de experiencia en el mercado, enfocada en el sector de protección, ahorro e inversiones.</p>
+              <p className="text-left">Enlace y desarrollo integral SA de CV. es una empresa 100% mexicana con más de 36 años de experiencia en el mercado, enfocada en el sector de protección, ahorro e inversiones.</p>
               <div className="social-links d-flex mt-4">
                 <Link><i className="bi bi-facebook" /></Link>
                 <Link><i className="bi bi-instagram" /></Link>
                 <Link><i className="bi bi-linkedin" /></Link>
               </div>
-            </div>
-            <div className="col-lg-3 col-6 footer-links text-left">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
             </div>
             {/* <div className="col-lg-2 col-6 footer-links">
               <h4>Our Services</h4>
@@ -38,13 +28,12 @@ const Footer = () => {
                 <li><a href="#">Graphic Design</a></li>
               </ul>
             </div> */}
-            <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <div className="col-lg-6 col-md-12 footer-contact text-center text-md-start">
               <h4>Contáctanos</h4>
-              <p>Piso 1, Juárez, Cuauhtémoc, 06600</p>
-              <p>CDMX, México</p>
-              <p>México</p>
-              <p className="mt-4"><strong>Teléfono:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='tel:5512462462'}}>+52 55 1246 2462</span></p>
-              <p><strong>Email:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='mailto:contacto@edisa785.com'}}>contacto@edisa785.com</span></p>
+              <p>Av. P.º de la Reforma 144, Juárez, Cuauhtémoc</p>
+              <p>06600 Ciudad de México, CDMX</p>
+              <p className="mt-4 link"><strong>Teléfono:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='tel:5512462462'}}>+52 55 1246 2462</span></p>
+              <p className="link"><strong>Email:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='mailto:contacto@edisa785.com'}}>contacto@edisa785.com</span></p>
             </div>
           </div>
         </div>
