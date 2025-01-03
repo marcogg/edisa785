@@ -8,6 +8,7 @@ import { Element } from "react-scroll"
 import AOS from 'aos'
 import HubspotForm from 'react-hubspot-form'
 import './../../src/App.scss'
+import { scroller } from 'react-scroll'
 
 const Home = () => {
 
@@ -489,7 +490,7 @@ const Home = () => {
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
                 <div className="content px-xl-5">
                   <h2 className='text-center'>Listo para construir tu <span className='text-orange'><strong>éxito</strong></span></h2>
-                  <button className='btn-get-started'>Inicia tu carrera</button>
+                  <button className='btn-get-started' onClick={()=>scroller.scrollTo('contacto')}>Inicia tu carrera</button>
                 </div>
               </div>
               <div className='col-lg-6' data-aos="fade-up" data-aos-delay={200}>
