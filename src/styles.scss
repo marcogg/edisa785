@@ -48,7 +48,7 @@ body {
 }
 
 .container-organigrama {
-    max-width: 1000px;
+    max-width: 1280px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -64,6 +64,7 @@ body {
     padding: 10px;
     overflow: hidden;
     margin-top: 15px;
+    width: 110px;
 
     & img {
         border-radius: 14px;
@@ -206,15 +207,21 @@ body {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .level-3-wrapper {
     position: relative;
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: calc(120% + -50px);
     width: 100%;
-    margin: 0 auto;
+    max-width: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto auto 40px 0;
+    transform: translateX(-43%);
 
     &.right {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
+        transform: translateX(50%);
     }
 }
 
@@ -223,7 +230,7 @@ body {
     position: absolute;
     top: -20px;
     left: calc(30% - 2px);
-    width: calc(46% + 11px);
+    width: calc(123% + 11px);
     height: 2px;
     background: var(--black);
 }
@@ -231,8 +238,8 @@ body {
 .right.level-3-wrapper::before {
     // left: calc(20% - -2px);
     // width: calc(64% + 5px);
-    left: calc(3% + 3px);
-    width: calc(81% + 5px);
+    left: calc(6% + 3px);
+    width: calc(107% + 5px);
 }
 
 .level-3-wrapper>li::before {
@@ -274,7 +281,12 @@ body {
 .level-4-wrapper {
     position: relative;
     width: 80%;
+    max-width: 100px;
     margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding-left: 0;
 
     &.right {
         width: 100%;
@@ -293,7 +305,7 @@ body {
 }
 
 .level-4-wrapper li+li {
-    margin-top: 20px;
+    // margin-top: 20px;
 }
 
 .level-4 {
@@ -324,22 +336,35 @@ body {
     top: 50%;
     left: -20%;
     z-index: 20;
-    transform: translate(-53%, -50%);
-    width: 50px;
+    transform: translate(33%, -50%);
+    width: 14px;
     height: 2px;
     background: var(--black);
 }
 
 .outflow.level-4-wrapper::before {
-    left: -12%;
-    top: -272px;
+    left: -23%;
+    top: -268px;
     height: calc(120% + 20px);
 }
 
 .inflow.level-4::before {
-    left: -15%;
-    transform: translate(-20%, 50%);
-    width: 20px;
+    left: -9%;
+    transform: translate(20%, 50%);
+    width: 11px;
+
+    &::before:nth-child(1) {
+        transform: translate(-37%, 50%);
+    }
+
+}
+
+.inflow.level-4.subteam {
+    transform: translateX(27%);
+}
+
+.noline.inflow.level-4::before {
+    width: 0;
 }
 
 .inflow.level-4-wrapper::before {
@@ -350,6 +375,7 @@ body {
     width: 2px;
     height: calc(100% + 20px);
     background: var(--black);
+    transform: translateX(-20px);
 }
 
 
@@ -396,6 +422,7 @@ body {
 @media screen and (max-width: 700px) {
     .rectangle {
         padding: 5px;
+        width: 90px;
     }
 
     .level-1,
@@ -415,8 +442,30 @@ body {
     .level-2-wrapper,
     .level-2-wrapper::after,
     .level-2::after {
-        display: block;
+        display: flex;
         padding: 0;
+    }
+
+    .level-2-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .level-3-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        transform: translate(0);
+
+        &.right {
+            display: grid;
+            transform: translateX(0);
+        }
+    }
+
+    .level-4-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .level-2-wrapper {
@@ -449,8 +498,9 @@ body {
 
     .level-4 {
         &::before {
-            left: 14%;
-            transform: translate(-60%, -50%);
+            left: -14%;
+            transform: translate(64%, -50%);
+            width: 8px;
         }
 
         & h4 {
@@ -466,8 +516,9 @@ body {
 
     .left.level-4::before {
         left: -14%;
-        transform: translate(-77%, -50%);
-        width: 50px;
+        transform: translate(-28%, -50%);
+        width: 16px;
+
     }
 
     .outflow.level-4-wrapper::before {
@@ -477,14 +528,14 @@ body {
 
     .level-4::before {
         left: -14%;
-        transform: translate(-77%, -50%);
-        width: calc(34px + 2px);
+        transform: translate(66%, -50%);
+        width: 8px;
     }
 
     .inflow.level-4::before {
-        left: -22%;
-        transform: translate(-20%, 50%);
-        width: 20px;
+        right: -22%;
+        transform: translate(6%, 50%);
+        width: 8px;
     }
 
     .right.level-3-wrapper::before {

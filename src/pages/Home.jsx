@@ -260,7 +260,7 @@ const Home = () => {
                         <h3 className="">Perla Cabrera</h3>
                         <p>Gerente reclutamiento</p>
                       </div>
-                      <ol className="level-4-wrapper right inflow">
+                      <ol className="level-4-wrapper right inflow subteam">
                         <li className='level-4 inflow'>
                         <div className='rectangle'>
                             <img src="./../organigrama/barusch-peralta.jpg" className="img-fluid" alt='Barusch Peralta' />
