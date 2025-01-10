@@ -23,7 +23,7 @@ const Footer = () => {
               <p>Av. P.º de la Reforma 144, Juárez, Cuauhtémoc</p>
               <p>06600 Ciudad de México, CDMX</p>
               <p className="mt-4 link"><strong>Teléfono:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='tel:5512462462'}}>+52 55 1246 2462</span></p>
-              <p className="link"><strong>Email:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='mailto:contacto@edisa785.com'}}>contacto@edisa785.com</span></p>
+              <p className="link"><strong>Email:</strong> <span onClick={(e)=>{e.preventDefault(); window.location='mailto:viridiana.talento@edisa785.com'}}>viridiana.talento@edisa785.com</span></p>
             </div>
           </div>
         </div>

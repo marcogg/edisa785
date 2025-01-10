@@ -9,6 +9,7 @@ import AOS from 'aos'
 import HubspotForm from 'react-hubspot-form'
 import './../../src/App.scss'
 import { scroller } from 'react-scroll'
+import ToTop from '../components/Hooks/ToTop/ToTop'
 
 const Home = () => {
 
@@ -533,7 +534,7 @@ const Home = () => {
                     <i className="bi bi-envelope flex-shrink-0" />
                     <div className='text-left'>
                       <h3>Email</h3>
-                      <p onClick={(e)=>{e.preventDefault(); window.location='mailto:contacto@edisa785.com'}}>contacto@edisa785.com</p>
+                      <p onClick={(e)=>{e.preventDefault(); window.location='mailto:viridiana.talento@edisa785.com'}}>viridiana.talento@edisa785.com</p>
                     </div>
                   </div>{/* End Info Item */}
                 </div>
@@ -554,6 +555,8 @@ const Home = () => {
         </Element>
       </main >
 
+      {/* Scroll to top button */}
+      <ToTop />
 
       {/* Footer */}
       < Footer />

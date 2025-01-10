@@ -9,7 +9,7 @@ const Nav = () => {
       <div className="topbar d-flex align-items-center">
         <div className="container d-flex justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center">
-            <i className="bi bi-envelope d-flex align-items-center"><Link onClick={(e)=>{e.preventDefault(); window.location='mailto:contacto@edisa785.com'}}>contacto@edisa785.com</Link></i>
+            <i className="bi bi-envelope d-flex align-items-center"><Link onClick={(e)=>{e.preventDefault(); window.location='mailto:viridiana.talento@edisa785.com.mx '}}>viridiana.talento@edisa785.com.mx </Link></i>
             <i className="bi bi-phone d-flex align-items-center ms-4"><span><Link onClick={(e)=>{e.preventDefault(); window.location='tel:5512462462'}}>+52 55 1246 2462</Link></span></i>
           </div>
           <div className="social-links d-none d-md-flex align-items-center">
