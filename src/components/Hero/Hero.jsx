@@ -11,14 +11,14 @@ const Hero = () => {
       <section id="hero" className="hero section accent-background">
         <div className="container position-relative" data-aos="fade-up" data-aos-delay={100}>
           <div className="row gy-5 justify-content-between">
-            <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <div className="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h2 className="text-orange text-left"><span> Más de 36 años de experiencia en el mercado, </span><span className="text-blue">enfocada en el sector de protección, ahorro e inversiones, desarrollando empresarios en el sector asegurador.</span></h2>
               <p className='text-left'>Enlace y desarrollo integral SA de CV. empresa 100% mexicana</p>
               <div className="d-flex">
                 <button onClick={()=>scroller.scrollTo('contacto')} className="btn-get-started">Únete al equipo</button>
               </div>
             </div>
-            <div className="col-lg-6 order-1 order-lg-2">
+            <div className="col-lg-7 order-1 order-lg-2">
               <picture>
                 <source srcSet="../hero_v3.webp" type="image/webp" />
                 <img src="../hero_v3.png" className="img-fluid black-white" alt />

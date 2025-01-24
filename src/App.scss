@@ -71,7 +71,12 @@
 }
 
 .text-left {
-  text-align: left;
+  text-align: left !important;
+}
+
+.text-sm {
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .iconXl {
